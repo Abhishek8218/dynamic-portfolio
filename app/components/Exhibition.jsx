@@ -108,7 +108,7 @@ const Exhibition = () => (
           </div>
         </div>
       </li>
-      {/* Additional exhibition cards */}
+    
     </ul>
  </div>
 );

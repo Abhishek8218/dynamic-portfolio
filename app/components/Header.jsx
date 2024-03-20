@@ -7,7 +7,7 @@ import { MdOutlineClose} from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
 
 const Header = () => {
-  // State variables to handle navbar and overlay visibility
+  
   const [isNavbarActive, setNavbarActive] = useState(false);
   const [isOverlayActive, setOverlayActive] = useState(false);
 
@@ -35,7 +35,7 @@ const Header = () => {
     { id: 6, text: 'Contact', href: '#contact' },
   ];
 
-  // Effect to handle header active class
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("[data-header]");
@@ -76,15 +76,14 @@ const Header = () => {
               onClick={toggleNavbar}
               data-nav-toggler=""
             >
-              {/* <IonIcon icon={closeOutline} /> */}
+         
               <MdOutlineClose />
             </button>
           </div>
           <ul className="navbar-list">
-            {/* Map over the array of navigation items */}
             {navItems.map((item) => (
               <li key={item.id}>
-                {/* Use Link from Next.js for client-side navigation */}
+               
                 <Link href={item.href} legacyBehavior>
                   <a className="navbar-link" onClick={closeNavbar} data-nav-link>
                     {item.text}
@@ -96,7 +95,7 @@ const Header = () => {
         </nav>
         <a href="#" className="btn btn:hover">
           <span className="span">Get A Quote</span>
-          {/* <ion-icon name="arrow-forward" aria-hidden="true" /> */}
+       
           <IoMdArrowForward />
         </a>
         <button

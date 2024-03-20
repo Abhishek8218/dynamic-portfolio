@@ -1,4 +1,4 @@
-// pages/index.js or pages/index.tsx
+
 'use client'
 import React, { useState, useEffect } from 'react';
 
@@ -22,11 +22,11 @@ function HomePage() {
     async function fetchData() {
       try {
         const data = await fetchUserData();
-        console.log('Fetched Data:', data); // Log the fetched data
+     
         setUserData(data);
         setIsLoaded(true); // Set loaded state to true when data is fetched
       } catch (error) {
-        console.error('Failed to fetch user data:', error);
+        
       }
     }
 
@@ -55,10 +55,10 @@ function HomePage() {
     );
   }
 
- console.log('User Data State:', userData); // Log the user data state
+
 
  return (
-    <div>
+    <div className='main'>
       
       <Header/>
       <Hero user={userData.user.about} />
@@ -69,7 +69,7 @@ function HomePage() {
      <Testimonials testimonials={userData.user.testimonials}/>
      <Contact/>
      <Footer/>  
-      {/* Render other components and pass data as props as needed */}
+     
     </div>
  );
 }

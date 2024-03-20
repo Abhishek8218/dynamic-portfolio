@@ -13,6 +13,7 @@ const Hero = ({user}) => {
         height={680}
         alt="Drew Hays"
         className="img-cover"
+        priority={true}
       />
     </div>
   

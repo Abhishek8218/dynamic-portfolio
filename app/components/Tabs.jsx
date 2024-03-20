@@ -10,7 +10,7 @@ import Exhibition from './Exhibition';
 // Import other tab content components here
 
 const Tabs = ({about,social , skills}) => {
-    console.log('about Data in Tab:', about);
+    
  const [activeTab, setActiveTab] = useState('about');
 
  const handleTabClick = (tab) => {

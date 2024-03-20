@@ -153,11 +153,12 @@ html {
 
 body {
   background-color: var(--bg-black);
+width: 100%;
   color: var(--text-light-gray);
   font-family: var(--fontFamily-roboto);
   font-size: var(--fontSize-8);
   line-height: 1.75;
-  overflow: scroll;
+  
 }
 
 body.loaded { overflow-y: auto; }
@@ -356,7 +357,7 @@ body.nav-active { overflow: hidden; }
 .header .btn { display: none; }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

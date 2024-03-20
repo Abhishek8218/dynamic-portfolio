@@ -15,11 +15,12 @@ const Services = ({ services }) => {
                  {service.image && service.image.url && (
                     <Image
                       src={service.image.url}
+                      
                       width={80}
                       height={80}
                       loading="lazy"
                       alt={service.name}
-                      layout='responsive'
+                      
                     />
                  )}
                 </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const AboutMe = ({about, social}) => {
-    console.log('social Data in About:', social);
+   
     
     
     return (
