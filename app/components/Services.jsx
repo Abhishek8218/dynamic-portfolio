@@ -11,14 +11,15 @@ const Services = ({ services }) => {
           {services.slice(0,5).map((service, index) => (
             <li key={index} className="service-item">
               <div className="service-card">
-                <div className="card-icon">
-                 {service.image && service.image.url && ( // Check if service.image and service.image.url are defined
+                <div className="card-icon" style={{ width: '80px', height: '80px' }}>
+                 {service.image && service.image.url && (
                     <Image
                       src={service.image.url}
                       width={80}
                       height={80}
                       loading="lazy"
                       alt={service.name}
+                      layout='responsive'
                     />
                  )}
                 </div>

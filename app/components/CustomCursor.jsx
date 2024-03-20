@@ -26,13 +26,13 @@ const CustomCursor = () => {
     };
 
     const handleMouseOver = (e) => {
-        console.log('Mouse over:', e.target);
+      
       setIsHovered(true);
       cursors.forEach(cursor => cursor.classList.add("hovered"));
     };
 
     const handleMouseOut = (e) => {
-        console.log('Mouse oit:', e.target);
+       
       setIsHovered(false);
       cursors.forEach(cursor => cursor.classList.remove("hovered"));
     };
